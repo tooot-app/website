@@ -10,10 +10,21 @@ module.exports = {
       backgroundLight: 'rgb(250, 250, 250)',
       backgroundDark: 'rgb(25, 25, 25)'
     },
-    extend: {}
+    fontFamily: {
+      sans: ['Montserrat', 'sans-serif']
+    },
+    extend: {
+      spacing: { '200vh': '200vh' },
+      backgroundImage: {
+        'device-light': "url('/device/light.svg')",
+        'device-dark': "url('/device/dark.svg')"
+      }
+    }
   },
   variants: {
-    extend: {}
+    extend: {
+      backgroundImage: ['dark']
+    }
   },
   plugins: []
 }

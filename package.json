@@ -9,10 +9,13 @@
   },
   "dependencies": {
     "autoprefixer": "^10.2.3",
+    "framer-motion": "^3.2.2-rc.1",
     "next": "10.0.5",
     "postcss": "^8.2.4",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "tailwindcss": "^2.0.2"
+    "react-feather": "^2.0.9",
+    "tailwindcss": "^2.0.2",
+    "use-dark-mode": "^2.3.1"
   }
 }

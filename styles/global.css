@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+
+.device-content {
+  top: calc(100% / 2902 * 335);
+  height: calc(100% / 2902 * (2902 - 335 - 299));
+  left: calc(100% / 1414 * 65);
+  width: calc(100% / 1414 * (1414 - 65 - 65));
+}
+
+@tailwind utilities;
+
+@layer base {
+  a {
+    @apply transition-colors
+      hover:text-secondaryLight
+      dark:hover:text-secondaryDark;
+  }
+}
