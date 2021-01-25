@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 
-.device-content {
+.device-content-large {
   top: calc(100% / 2902 * 335);
   height: calc(100% / 2902 * (2902 - 335 - 299));
   left: calc(100% / 1414 * 65);
@@ -15,5 +15,14 @@
     @apply transition-colors
       hover:text-secondaryLight
       dark:hover:text-secondaryDark;
+  }
+  h2 {
+    @apply text-3xl mb-4;
+  }
+  p {
+    @apply mb-4;
+  }
+  li {
+    @apply pl-4 mb-2;
   }
 }

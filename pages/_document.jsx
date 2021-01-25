@@ -12,7 +12,7 @@ class MyDocument extends Document {
             rel='stylesheet'
           />
         </Head>
-        <body className='bg-backgroundLight dark:bg-backgroundDark text-primaryLight dark:text-primaryDark h-200vh overscroll-none'>
+        <body className='bg-backgroundLight dark:bg-backgroundDark text-primaryLight dark:text-primaryDark overscroll-none'>
           <script src='noflash.js' />
           <a
             rel='me'
