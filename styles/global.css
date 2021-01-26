@@ -16,6 +16,9 @@
       hover:text-secondaryLight
       dark:hover:text-secondaryDark;
   }
+  h1 {
+    @apply text-4xl mb-4;
+  }
   h2 {
     @apply text-3xl mb-4;
   }
