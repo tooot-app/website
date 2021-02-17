@@ -17,13 +17,13 @@
       dark:hover:text-secondaryDark;
   }
   h1 {
-    @apply text-4xl mb-4;
+    @apply text-2xl lg:text-4xl mt-2 mb-4;
   }
   h2 {
-    @apply text-3xl mb-4;
+    @apply text-xl lg:text-2xl mt-8 mb-4;
   }
   p {
-    @apply mb-4;
+    @apply text-sm lg:text-base leading-relaxed mb-4;
   }
   li {
     @apply pl-4 mb-2;

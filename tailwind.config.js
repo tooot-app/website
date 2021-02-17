@@ -8,7 +8,7 @@ module.exports = {
       secondaryLight: 'rgb(135, 135, 135)',
       secondaryDark: 'rgb(130, 130, 130)',
       backgroundLight: 'rgb(250, 250, 250)',
-      backgroundDark: 'rgb(25, 25, 25)'
+      backgroundDark: 'rgb(18, 18, 18)'
     },
     fontFamily: {
       sans: ['Montserrat', 'sans-serif']
