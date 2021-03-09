@@ -22,6 +22,9 @@
   h2 {
     @apply text-xl lg:text-2xl mt-8 mb-4;
   }
+  h3 {
+    @apply text-lg lg:text-lg mt-4 mb-2;
+  }
   p {
     @apply text-sm lg:text-base leading-relaxed mb-4;
   }

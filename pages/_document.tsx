@@ -13,7 +13,6 @@ class MyDocument extends Document {
           />
         </Head>
         <body className='bg-backgroundLight dark:bg-backgroundDark text-primaryLight dark:text-primaryDark overscroll-none'>
-          <script src='noflash.js' />
           <a
             rel='me'
             href='https://social.xmflsct.com/@tooot'
