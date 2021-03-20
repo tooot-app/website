@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Layout from '../components/layout'
 
 const Index = () => {
+  useEffect(() => {
+    const script = document.createElement('script')
+    document.head.appendChild(script)
+    script.src = 'https://betteruptime.com/widgets/announcement.js'
+    script.attributes['data-id'] = '124304'
+    script.async = true
+    script.onload = () => {
+      console.log('yes!')
+    }
+  }, [])
+
   return (
     <Layout>
       <div className='mb-4'>
