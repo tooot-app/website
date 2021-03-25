@@ -34,3 +34,5 @@ yarn-error.log*
 .vercel
 
 .envrc
+/public/tooot-latest.apk
+/public/checksum.json

@@ -42,10 +42,7 @@ const Index = () => {
         安卓APK Android APK
       </a>
       <p className='overflow-x-scroll whitespace-nowrap text-sm no-scrollbar'>
-        Checksum:{' '}
-        {process.env.NODE_ENV
-          ? 'dev'
-          : require('../public/checksum.json').checksum}
+        Checksum: {require('../public/checksum.json').checksum}
       </p>
     </Layout>
   )
