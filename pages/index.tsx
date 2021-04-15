@@ -31,7 +31,7 @@ const Index = () => {
         . Catered mainly for Chinese community.
       </div>
 
-      <a href='https://apps.apple.com/app/google/id284815942' target='_blank'>
+      <a href='https://apps.apple.com/app/id1549772269' target='_blank'>
         <img src={`/store/apple/dark.svg`} className='w-36 lg:w-48' />
       </a>
       <a
