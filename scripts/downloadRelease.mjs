@@ -45,10 +45,9 @@ const main = () => {
       }
     })
     .then(async ({ data }) => {
-      const latest = data.find(d => d.prerelease)
+      const latest = data.find(d => !d.prerelease)
       await download(latest.assets[0].browser_download_url)
       getChecksum().then(checksum => {
-        console.log(checksum)
         fs.writeFileSync('./public/checksum.json', JSON.stringify({ checksum }))
       })
     })

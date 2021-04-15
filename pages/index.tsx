@@ -39,10 +39,10 @@ const Index = () => {
       </a>
       <a href='/tooot-latest.apk'>
         <DownloadCloud size='1rem' className='inline-block align-text-top' />{' '}
-        安卓APK Android APK
+        tooot-latest.apk
       </a>
       <p className='overflow-x-scroll whitespace-nowrap text-sm no-scrollbar'>
-        Checksum: {require('../public/checksum.json').checksum}
+        SHA256: {require('../public/checksum.json').checksum}
       </p>
     </Layout>
   )
