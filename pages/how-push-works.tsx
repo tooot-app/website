@@ -2,7 +2,10 @@ import Layout from '../components/layout'
 
 const Privacy = () => {
   return (
-    <Layout>
+    <Layout
+      title='How Push Works'
+      description='Explaining how push works of tooot app'
+    >
       <h1>How push works</h1>
       <h2>The background</h2>
       <p>

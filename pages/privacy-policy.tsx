@@ -2,7 +2,7 @@ import Layout from '../components/layout'
 
 const Privacy = () => {
   return (
-    <Layout>
+    <Layout title='Privacy Policy' description='Privacy policy of tooot app'>
       <h1>Privacy Policy</h1>
       <h2>What information do we collect?</h2>
       <ul className='list-disc list-inside'>

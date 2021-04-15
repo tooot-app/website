@@ -12,7 +12,10 @@ const Index = () => {
   }, [])
 
   return (
-    <Layout>
+    <Layout
+      title='tooot'
+      description='一款简洁的长毛象手机客户端。专为中文用户社区打造。A simple yet elegant mobile app client for Mastodon. Catered mainly for Chinese community.'
+    >
       <div className='mb-4'>
         一款简洁的
         <a href='https://joinmastodon.org/' target='_blank'>

@@ -3,10 +3,17 @@ import React from 'react'
 import Footer from './footer'
 import Header from './header'
 
-const Layout: React.FC = ({ children }) => {
+export interface Props {
+  title: string
+  description: string
+}
+
+const Layout: React.FC<Props> = ({ children, title, description }) => {
   return (
     <div className='min-h-screen max-w-xl mx-auto flex flex-col justify-between px-4 py-8'>
       <Head>
+        <title>{title}</title>
+        <meta name='description' content={description} />
         <script
           src='https://betteruptime.com/widgets/announcement.js'
           data-id='124304'
