@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { isIOS, isAndroid } from 'react-device-detect'
 import { DownloadCloud } from 'react-feather'
 import Layout from '../components/layout'
 
@@ -9,6 +10,17 @@ const Index = () => {
     script.src = 'https://betteruptime.com/widgets/announcement.js'
     script.attributes['data-id'] = '124304'
     script.async = true
+  }, [])
+
+  useEffect(() => {
+    if (isIOS) {
+      window.open('itms-appss://itunes.apple.com/app/id1549772269')
+    }
+    if (isAndroid) {
+      window.open(
+        'https://play.google.com/store/apps/details?id=com.xmflsct.app.tooot'
+      )
+    }
   }, [])
 
   return (
