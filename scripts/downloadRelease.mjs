@@ -46,10 +46,16 @@ const main = () => {
     })
     .then(async ({ data }) => {
       const latest = data.find(d => !d.prerelease)
+
       await download(latest.assets[0].browser_download_url)
       getChecksum().then(checksum => {
         fs.writeFileSync('./public/checksum.json', JSON.stringify({ checksum }))
       })
+
+      fs.writeFileSync(
+        './public/version.json',
+        JSON.stringify({ latest: latest.name.replace('v', '') })
+      )
     })
     .catch(err => console.log(err))
 }

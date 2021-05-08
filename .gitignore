@@ -36,3 +36,4 @@ yarn-error.log*
 .envrc
 /public/tooot-latest.apk
 /public/checksum.json
+/public/version.json
