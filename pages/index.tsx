@@ -1,9 +1,13 @@
+import { faStar, faStarHalf } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import axios from 'axios'
 import React, { useEffect } from 'react'
 import { isIOS, isAndroid } from 'react-device-detect'
 import { DownloadCloud } from 'react-feather'
+import StarRatingComponent from 'react-star-rating-component'
 import Layout from '../components/layout'
 
-const Index = () => {
+const Index = ({ apple }) => {
   useEffect(() => {
     const script = document.createElement('script')
     document.head.appendChild(script)
@@ -46,6 +50,20 @@ const Index = () => {
       <a href='https://apps.apple.com/app/id1549772269' target='_blank'>
         <img src={`/store/apple/dark.svg`} className='w-36 lg:w-48' />
       </a>
+      <div className='flex flex-row items-center mt-1'>
+        <StarRatingComponent
+          name='ratingA'
+          editing={false}
+          value={apple}
+          renderStarIcon={() => (
+            <FontAwesomeIcon icon={faStar} fixedWidth color='#ffb400' />
+          )}
+          renderStarIconHalf={() => (
+            <FontAwesomeIcon icon={faStarHalf} fixedWidth color='#ffb400' />
+          )}
+        />
+        <span className='ml-1 font-bold'>{apple}</span>
+      </div>
       <a
         href='https://play.google.com/store/apps/details?id=com.xmflsct.app.tooot'
         target='_blank'
@@ -61,6 +79,30 @@ const Index = () => {
       </p>
     </Layout>
   )
+}
+
+export const getStaticProps = async () => {
+  const apple = await axios.get<{
+    ratings: {
+      country: string
+      all_ratings: { average: number; rating_count: number }
+    }[]
+  }>('https://api.appannie.com/v1.3/apps/ios/app/1549772269/ratings', {
+    headers: {
+      Authorization: `Bearer ${process.env.APPANNIE_API_KEY}`
+    }
+  })
+  const appleRating = { total: 0, count: 0 }
+  for (const rating of apple.data.ratings) {
+    appleRating.total +=
+      rating.all_ratings.average * rating.all_ratings.rating_count
+    appleRating.count += rating.all_ratings.rating_count
+  }
+
+  return {
+    props: { apple: appleRating.total / appleRating.count },
+    revalidate: 60 * 60 * 24 * 7
+  }
 }
 
 export default Index
