@@ -62,7 +62,7 @@ const Index = ({ apple }) => {
             <FontAwesomeIcon icon={faStarHalf} fixedWidth color='#ffb400' />
           )}
         />
-        <span className='ml-1 font-bold'>{apple}</span>
+        <span className='ml-1 font-bold'>{apple.toString().slice(0,3)}</span>
       </div>
       <a
         href='https://play.google.com/store/apps/details?id=com.xmflsct.app.tooot'
