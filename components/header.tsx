@@ -5,7 +5,7 @@ import Logo from './logo'
 const Header = () => {
   return (
     <Link href='/' passHref>
-      <a href='/'>
+      <a href='/' className='self-start'>
         <Logo />
       </a>
     </Link>

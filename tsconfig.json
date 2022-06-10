@@ -16,13 +16,16 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "pages/_document.jsx", "pages/_app.jsx"  ],
+    "**/*.tsx",
+    "pages/_document.jsx",
+    "pages/_app.jsx"
+  ],
   "exclude": [
     "node_modules"
   ]

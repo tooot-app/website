@@ -10,7 +10,7 @@ export interface Props {
 
 const Layout: React.FC<Props> = ({ children, title, description }) => {
   return (
-    <div className='min-h-screen max-w-xl mx-auto flex flex-col justify-between px-4 py-8'>
+    <div className='min-h-screen max-w-2xl mx-auto flex flex-col justify-between px-4 py-8'>
       <Head>
         <title>{title}</title>
         <meta name='description' content={description} />

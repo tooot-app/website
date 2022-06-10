@@ -12,17 +12,8 @@ export default function Footer () {
         <ExternalLink size='1rem' className='inline-block align-text-top' />
       </a>
 
-      <a
-        href='https://status.tooot.app/'
-        target='_blank'
-        className='my-2 lg:my-0 text-sm'
-      >
-        Services status{' '}
-        <ExternalLink size='1rem' className='inline-block align-text-top' />
-      </a>
-
       <div className='text-sm'>
-        © 2021 tooot by{' '}
+        © 2022 tooot by{' '}
         <a href='https://xmflsct.com' target='_blank'>
           xmflsct{' '}
           <ExternalLink size='1rem' className='inline-block align-text-top' />
