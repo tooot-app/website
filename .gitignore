@@ -38,3 +38,5 @@ yarn-error.log*
 /public/tooot-latest.apk
 /public/checksum.json
 /public/version.json
+
+next-env.d.ts
