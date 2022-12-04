@@ -10,9 +10,10 @@ fetch('https://api.github.com/repos/tooot-app/app/releases', {
     const data = await res.json()
     const latest = data.find(d => !d.prerelease)
 
+    console.log('version', latest.name.replace('v', ''))
+
     fs.writeFileSync(
       './public/version.json',
       JSON.stringify({ latest: latest.name.replace('v', '') })
     )
   })
-  .catch(err => console.log(err))
