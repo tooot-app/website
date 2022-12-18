@@ -4,7 +4,6 @@ class MyDocument extends Document {
   render() {
     return (
       <Html className='h-screen'>
-        <Head />
         <Head>
           <meta name='apple-itunes-app' content='app-id=1549772269' />
         </Head>
