@@ -25,7 +25,7 @@ const Layout: React.FC<Props & React.PropsWithChildren> = ({ children, title, de
       <Link href='/' passHref>
         <Logo />
       </Link>
-      <main children={children} className='my-12' />
+      <main children={children} className='my-12 prose' />
       <footer className='flex flex-col lg:flex-row justify-between'>
         <a href='https://github.com/tooot-app' target='_blank' className='text-sm'>
           Source code <ExternalLink size='1rem' className='inline-block align-text-top' />

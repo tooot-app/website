@@ -10,5 +10,7 @@ module.exports = {
       backgroundDark: 'rgb(18, 18, 18)'
     }
   },
-  plugins: []
+  plugins: [
+    require('@tailwindcss/typography'),
+  ]
 }
