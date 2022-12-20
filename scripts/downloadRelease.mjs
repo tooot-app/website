@@ -1,4 +1,5 @@
 import fs from 'fs'
+import fetch from 'node-fetch'
 
 fetch('https://api.github.com/repos/tooot-app/app/releases', {
   headers: {
